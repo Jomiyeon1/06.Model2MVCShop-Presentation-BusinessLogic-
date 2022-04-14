@@ -59,6 +59,7 @@ public class ProductController {
 		
 	}
 	
+	// prodNo ¸øºÒ·¯¿È
 	@RequestMapping("/getProduct.do")
 	public String getProduct(@RequestParam("prodNo") int prodNo, Model model) throws Exception{
 		
