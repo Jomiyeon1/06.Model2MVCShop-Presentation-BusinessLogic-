@@ -58,7 +58,7 @@
 										 				prod_no = #{searchKeyword}
 													</if>
 													<if test="searchCondition == 1 and searchKeyword !='' ">
-										 				prod_name = #{searchKeyword}
+										 				prod_name like '%${searchKeyword}%'
 													</if>
 													<if test="searchCondition == 2 and searchKeyword !='' ">
 										 				price = #{searchKeyword}
