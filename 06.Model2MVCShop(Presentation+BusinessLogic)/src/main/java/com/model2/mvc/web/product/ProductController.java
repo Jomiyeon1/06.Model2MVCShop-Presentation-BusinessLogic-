@@ -54,12 +54,12 @@ public class ProductController {
 		//Business Logic
 		productservice.addProduct(product);
 		
-		return "forward:/product/getProduct.jsp";
+		return "forward:/product/addView.jsp";
 		
 		
 	}
 	
-	// prodNo 못불러옴
+	
 	@RequestMapping("/getProduct.do")
 	public String getProduct(@RequestParam("prodNo") int prodNo, Model model) throws Exception{
 		
@@ -85,7 +85,7 @@ public class ProductController {
 		return "forward:/product/updateProduct.jsp";
 	}
 	
-	/// 수정중
+	
 	@RequestMapping("/updateProduct.do")
 	public String updateProduct(@ModelAttribute("product") Product product, Model model) throws Exception{
 		
